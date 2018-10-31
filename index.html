@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Coyote Tracker</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBUGnFhMtnNGjaDpnRHKLginwp8VTDmlkk" type="text/javascript"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.3/jquery.min.js" type="text/javascript"></script>
+    <script src="http://code.jquery.com/mobile/1.0a1/jquery.mobile-1.0a1.min.js"></script>
+    <!-- <script src="js/jquery.ui.map.js"></script> -->
+
+</head>
+
+<body>
+
+    <!-- home page -->
+    <div data-role="page" id="about">
+        <!-- header -->
+        <div data-role="header" class="header hideBtn">
+            <div class="logo">
+                <img src="images/logo_40px_logoB&W.png" alt="logo">
+                <h1 class="heading">Coyote Tracker</h1>
+            </div>
+        </div>
+        <!-- header end-->
+
+        <!-- content -->
+        <div data-role="content" class="main-content">
+            <div class="diagram">
+                <h3 class="heading1">Coyote</h3>
+                <p class="p first">SCIENTIFIC NAME <br><span class="raleway">Canis Latrans</span></p>
+                <p class="p">TYPE <br><span class="raleway">Mammals</span></p>
+                <p class="p">DIET <br><span class="raleway">Omnivores</span></p>
+                <p class="p">GROUP NAME <br><span class="raleway">Pack</span></p>
+                <p class="p">AVERAGE LIFE SPAN IN THE WILD <br><span class="raleway">Up To 14 Years</span></p>
+                <p class="p">SIZE <br><span class="raleway">Head And Body, 32 To 37 In; Tail, 16 In</span></p>
+                <p class="p">WEIGHT <br><span class="raleway">20 To 50 Lbs Size</span></p>
+                <p class="last">RELATIVE TO A 6-FT MAN</p>
+            </div>
+            <img class="coyote-solo" src="images/135x135px_coyote.jpg" alt="coyote">
+        </div>
+
+        <div class="second-content content-end">
+            <form class="search">
+                <input data-type="search" id="searchForCollapsibleSet" placeholder="SEARCH..." class="search-input">
+            </form>
+            <div data-role="collapsibleset" data-filter="true" data-inset="true" id="collapsiblesetForFilter"
+                data-input="#searchForCollapsibleSet" class="collaps-mar-top">
+                <div data-role="collapsible" data-filtertext="coyote">
+                    <h3>COYOTE</h3>
+                    <div class="search-content">
+                        <p>Coyotes are members of the Canidae family and share a lot of the same traits of their
+                            relatives:
+                            wolves, dogs, foxes, and jackals. They have narrow, elongated snouts, lean bodies, yellow
+                            eyes,
+                            bushy tails, and thick fur.</p>
+                    </div>
+                </div>
+                <div data-role="collapsible" data-filtertext="behavior">
+                    <h3>BEHAVIOR</h3>
+                    <div class="search-content">
+                        <p>When living in close proximity to humans, coyotes tend to be nocturnal but may also be
+                            active in
+                            the early morning and at sunset.
+                            <br>
+                            In areas with little or no human activity, coyotes will hunt during the day, and when
+                            a litter of pups needs to be fed, they may have to hunt around the clock. Coyotes normally
+                            hunt
+                            alone or in pairs and rarely as a pack, unless the prey is a deer or other large animal...</p>
+                    </div>
+                </div>
+                <div data-role="collapsible" data-filtertext="habitat">
+                    <h3>HABITAT</h3>
+                    <div class="search-content">
+                        <p>Coyotes are solitary creatures and mark their territory with urine. When hunting deer,
+                            however,
+                            they use teamwork and form packs. They take turns pursuing the deer until it tires, or they
+                            may
+                            drive the prey toward a hidden member of the pack, according to the University of
+                            Michigan’s
+                            Animal Diversity Web (ADW).
+                        </p>
+                    </div>
+                </div>
+                <div data-role="collapsible" data-filtertext="food & hunting">
+                    <h3>FOOD & HUNTING</h3>
+                    <div class="search-content">
+                        <p>Coyotes are not picky eaters. They eat small game such as rodents, rabbits, fish and frogs,
+                            and
+                            larger game like deer. Their diet is 90 percent mammalian.
+                        </p>
+                    </div>
+                </div>
+                <div data-role="collapsible" data-filtertext="breeding">
+                    <h3>BREEDING</h3>
+                    <div class="search-content">
+                        <p>Breeding season is in February and March. In the spring, females build dens in preparation
+                            for
+                            their young. Females have a gestation period of 63 days and give birth to groups of three
+                            to 12
+                            young at once. The groups of babies are called litters and each coyote baby is called a
+                            pup.
+                            The size of the litter depends on where the coyotes live. In areas where there are a lot of
+                            coyotes, there will be smaller litters. In areas with fewer coyotes, more pups will be
+                            born.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <!-- content end-->
+
+        <!-- footer -->
+        <div data-role="toolbar" data-type="footer" style="overflow:hidden;" class="footer-fix">
+            <div data-role="navbar">
+                <ul>
+                    <li class="tab-bar">
+                        <a class="tab" href="#about">
+                            <img src="images/icon_30px_home.png" alt="about" class="tab-icon">
+                            <br>
+                            About
+                        </a>
+                    </li>
+                    <li class="tab-bar">
+                        <a class="tab" href="#map">
+                            <img src="images/icon_30px_map.png" alt="map" class="tab-icon">
+                            <br>
+                            Map
+                        </a>
+                    </li>
+                    <li class="tab-bar">
+                        <a class="tab" href="#album">
+                            <img src="images/icon_30px_album.png" alt="album" class="tab-icon">
+                            <br>
+                            Album
+                        </a>
+                    </li>
+                    <li class="tab-bar">
+                        <a class="tab" href="#contact">
+                            <img src="images/icon_30px_contact.png" alt="contact" class="tab-icon">
+                            <br>
+                            Contact
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- footer end -->
+    </div>
+    <!-- home end -->
+
+    <!-- map page -->
+    <div data-role="page" id="map">
+        <!-- header -->
+        <div data-role="header" class="header hideBtn">
+            <div class="logo">
+                <img src="images/logo_40px_logoB&W.png" alt="logo">
+                <h1 class="heading">Coyote Tracker</h1>
+            </div>
+        </div>
+        <!-- header end-->
+        <!-- content -->
+        <div data-role="content" class="content-end">
+            <div id="map_library"></div>
+        </div>
+        <!-- content end -->
+
+        <!-- footer -->
+        <div data-role="toolbar" data-type="footer" style="overflow:hidden;" class="footer-fix">
+            <div data-role="navbar">
+                <ul>
+                    <li class="tab-bar">
+                        <a class="tab" href="#about">
+                            <img src="images/icon_30px_home.png" alt="about" class="tab-icon">
+                            <br>
+                            About
+                        </a>
+                    </li>
+                    <li class="tab-bar">
+                        <a class="tab" href="#map">
+                            <img src="images/icon_30px_map.png" alt="map" class="tab-icon">
+                            <br>
+                            Map
+                        </a>
+                    </li>
+                    <li class="tab-bar">
+                        <a class="tab" href="#album">
+                            <img src="images/icon_30px_album.png" alt="album" class="tab-icon">
+                            <br>
+                            Album
+                        </a>
+                    </li>
+                    <li class="tab-bar">
+                        <a class="tab" href="#contact">
+                            <img src="images/icon_30px_contact.png" alt="contact" class="tab-icon">
+                            <br>
+                            Contact
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- footer end -->
+    </div>
+    <!-- map end -->
+
+    <!-- album page -->
+    <div data-role="page" id="album">
+
+        <!-- header -->
+        <div data-role="header" class="header hideBtn">
+            <div class="logo">
+                <img src="images/logo_40px_logoB&W.png" alt="logo">
+                <h1 class="heading">Coyote Tracker</h1>
+            </div>
+        </div>
+        <!-- header end-->
+
+        <!-- content -->
+        <div class="main-content  content-end">
+            <div class="filter">
+                <ul class="center">
+                    <li class="filter-btn" data-value="all">All</li>
+                    <li class="filter-btn" data-value="spring">Spring</li>
+                    <li class="filter-btn" data-value="summer">Summer</li>
+                    <li class="filter-btn" data-value="fall">Fall</li>
+                    <li class="filter-btn" data-value="winter">Winter</li>
+                </ul>
+            </div>
+
+            <div class="album-pic">
+                <img src="images/172x180px_coyote7.jpg" alt="coyote" class="album-img" value="spring">
+                <img src="images/172x180px_coyote2.jpg" alt="coyote" class="album-img" value="winter">
+                <img src="images/172x180px_coyote4.jpeg" alt="coyote" class="album-img" value="winter">
+                <img src="images/172x180px_coyote8.jpg" alt="coyote" class="album-img" value="summer">
+                <img src="images/172x180px_coyote9.jpg" alt="coyote" class="album-img" value="fall">
+                <img src="images/172x180px_coyote1.jpg" alt="coyote" class="album-img" value="winter">
+                <img src="images/172x180px_coyote3.jpg" alt="coyote" class="album-img" value="winter">
+                <img src="images/172x180px_coyote5.jpg" alt="coyote" class="album-img" value="winter">
+            </div>
+        </div>
+        <!-- content end-->
+
+        <!-- footer -->
+        <div data-role="toolbar" data-type="footer" style="overflow:hidden;" class="footer-fix">
+            <div data-role="navbar">
+                <ul>
+                    <li class="tab-bar">
+                        <a class="tab" href="#about">
+                            <img src="images/icon_30px_home.png" alt="about" class="tab-icon">
+                            <br>
+                            About
+                        </a>
+                    </li>
+                    <li class="tab-bar">
+                        <a class="tab" href="#map">
+                            <img src="images/icon_30px_map.png" alt="map" class="tab-icon">
+                            <br>
+                            Map
+                        </a>
+                    </li>
+                    <li class="tab-bar">
+                        <a class="tab" href="#album">
+                            <img src="images/icon_30px_album.png" alt="album" class="tab-icon">
+                            <br>
+                            Album
+                        </a>
+                    </li>
+                    <li class="tab-bar">
+                        <a class="tab" href="#contact">
+                            <img src="images/icon_30px_contact.png" alt="contact" class="tab-icon">
+                            <br>
+                            Contact
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- footer end -->
+    </div>
+    <!-- album end -->
+
+    <!-- contact page -->
+    <div data-role="page" id="contact">
+        <!-- header -->
+        <div data-role="header" class="hideBtn">
+            <div class="contact-header">
+                <img class="contact-img" src="images/414x265px_contact_coyote.jpg" alt="coyote">
+            </div>
+        </div>
+        <!-- header end-->
+        <!-- content -->
+        <div data-role="content" class="main-content content-end">
+            <form>
+                <input class="input" type="text" id="fname" name="firstname" placeholder="FIRST NAME">
+                <input class="input" type="text" id="lname" name="lastname" placeholder="LAST NAME">
+                <input class="input" type="text" id="email" name="email" placeholder="E-MAIL">
+                <textarea class="textarea" id="message" name="message" placeholder="MESSAGE.."></textarea>
+
+                <button>SEND</button>
+            </form>
+        </div>
+        <!-- content end -->
+
+        <!-- footer -->
+        <div data-role="toolbar" data-type="footer" style="overflow:hidden;" class="footer-fix">
+            <div data-role="navbar">
+                <ul>
+                    <li class="tab-bar">
+                        <a class="tab" href="#about">
+                            <img src="images/icon_30px_home.png" alt="about" class="tab-icon">
+                            <br>
+                            About
+                        </a>
+                    </li>
+                    <li class="tab-bar">
+                        <a class="tab" href="#map">
+                            <img src="images/icon_30px_map.png" alt="map" class="tab-icon">
+                            <br>
+                            Map
+                        </a>
+                    </li>
+                    <li class="tab-bar">
+                        <a class="tab" href="#album">
+                            <img src="images/icon_30px_album.png" alt="album" class="tab-icon">
+                            <br>
+                            Album
+                        </a>
+                    </li>
+                    <li class="tab-bar">
+                        <a class="tab" href="#contact">
+                            <img src="images/icon_30px_contact.png" alt="contact" class="tab-icon">
+                            <br>
+                            Contact
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- footer end -->
+    </div>
+    <!-- contact end -->
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
